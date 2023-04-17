@@ -1,0 +1,68 @@
+#map {
+  width: 100%;
+  height: 450px;
+  min-height: 100%;
+}
+
+#form {
+  /* background-color: bisque; */
+}
+
+.contact2 {
+  margin-bottom: 2rem;
+}
+
+/* MOBILE */
+.form-name input,
+.form-email input {
+  width: 100%;
+  height: 4rem;
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  margin: 2rem auto 0 auto;
+}
+
+/* TABLETTE */
+@media screen and (min-width: 768px) {
+  #map {
+    height: 650px;
+  }
+
+  .contact2 {
+    display: grid;
+    gap: 2rem;
+    /* background-color: cornflowerblue; */
+    grid-template-columns: repeat(2, 1fr); /* 1fr  1fr */
+  }
+}
+
+/* DESKTOP  */
+@media screen and (min-width: 1200px) {
+  #map {
+    max-height: 100%;
+  }
+
+  .contact2 {
+    /* background-color: aquamarine; */
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: 400px;
+  }
+
+  #form-contact {
+    border: solid red 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .form-name,
+  .form-email {
+    width: calc(100% / 2 - 1rem);
+    margin-bottom: 2rem;
+  }
+}
